@@ -80,13 +80,13 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp">
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_check_head"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/ic_check_box"
                     />
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_uncheck_head"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -108,13 +108,13 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp">
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_check_hair"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/ic_check_box"
                     />
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_uncheck_hair"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -136,13 +136,13 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp">
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_check_moustache"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/ic_check_box"
                     />
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_uncheck_moustache"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -164,13 +164,13 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp">
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_check_eyes"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/ic_check_box"
                     />
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_uncheck_eyes"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -192,13 +192,13 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp">
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_check_eyebrow"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/ic_check_box"
                     />
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_uncheck_eyebrow"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -218,15 +218,14 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="10dp">
-                <ImageView
+                android:layout_gravity="center_horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_check_beard"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/ic_check_box"
                     />
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_uncheck_beard"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -240,6 +239,21 @@
                     android:layout_gravity="center_vertical"
                     android:textSize="20sp"
                     android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_dino"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/dino"
+                    app:civ_border_color="@color/colorAccent"
+                    app:civ_border_width="1dp"
                     />
             </LinearLayout>
         </LinearLayout>

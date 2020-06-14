@@ -7,10 +7,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class MainActivity extends AppCompatActivity {
-    private ImageView head, hair, eyebrow, eyes, moustache, beard,
-            checkHead, unCheckHead, checkHair, unCheckHair, checkEyeBrow, unCheckEyeBrow,
-            checkEyes, unCheckEyes, checkMoustache, unCheckMoustache, checkBeard, unCheckBeard;
+    private ImageView head, hair, eyebrow, eyes, moustache, beard;
+    private CircleImageView checkHead, unCheckHead, checkHair, unCheckHair, checkEyeBrow, unCheckEyeBrow,
+            checkEyes, unCheckEyes, checkMoustache, unCheckMoustache, checkBeard, unCheckBeard, dino;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         unCheckMoustache = findViewById(R.id.iv_uncheck_moustache);
         checkBeard = findViewById(R.id.iv_check_beard);
         unCheckBeard = findViewById(R.id.iv_uncheck_beard);
+        dino = findViewById(R.id.iv_dino);
 
         // set option visibility
         unCheckHead.setVisibility(View.GONE);
@@ -167,6 +170,13 @@ public class MainActivity extends AppCompatActivity {
                 changeVisibility(unCheckBeard);
                 changeVisibility(checkBeard);
                 return false;
+            }
+        });
+
+        dino.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Ginanjar S.B", Toast.LENGTH_SHORT).show();
             }
         });
     }
